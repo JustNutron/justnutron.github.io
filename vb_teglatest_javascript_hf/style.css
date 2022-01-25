@@ -1,0 +1,35 @@
+html {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+}
+
+body, html {
+    background-image: linear-gradient(to right, #047A95, #27A7C5, #38BAD8, #56D0EC, #7BE4FC, #B2F1FF, #DFF9FF);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 20px;
+    }
+}
+
+h3 {
+    margin-left: 520px;
+    margin-right: 520px;
+}

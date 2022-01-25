@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dínók</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dinoszauruszok</h1>
+    <select name="" id="dino_valto" onchange="valtoztat()">
+        <option value="0" selected>Dubreuillosaurus</option>
+        <option value="1">Pisanosaurus</option>
+        <option value="2">Herrerasaurus</option>
+        <option value="3">Deltadromeus</option>
+        <option value="4">Dollodon</option>
+        
+    </select>
+    <h2 id="dino_nev"></h2>
+    <img src="kepek/0.jpg" alt="" id="dinokep" class="img-fluid">
+    <p id="dinoszoveg">anyád</p>
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10"></div>    
+    </div>
+
+
+
+    <script>
+
+        var dinoktomb = [
+            "Dubreuillosaurus",
+            "Pisanosaurus",
+            "Herrerasaurus",
+            "Deltadromeus",
+            "Dollodon"
+
+        ];
+
+        var leirastomb = []
+        leirastomb.push("A aoijfaijiaojdiojdi nevű dínó nevének jelentése oajfajijdiajdiajd :D")
+        leirastomb.push("A aoijfaijiaojdiotése oajfajijdiajdiajd :D")
+        leirastomb.push("A aoijfaijiaojdiojdi nevű dínó nevéjdiajdiajd :D")
+        leirastomb.push("A aoijfaijiaojdiojdi nevű dínó  oajfajijdiajdiajd :D")
+        leirastomb.push("A aoijfaijiaojdiojdi nevűijdiajdiajd :D")
+
+        function valtoztat(){
+            var dinovariant = document.getElementById("dino_valto").value
+            document.getElementById("dino_nev").innerHTML = dinoktomb[dinovariant];
+            document.getElementById("dinokep").src ="kepek/" +dinovariant+ ".jpg";
+            document.getElementById("dinokep").src ="kepek/" +dinovariant+ ".jpg";
+            document.getElementById("dinokep").src ="kepek/" +dinovariant+ ".jpg";
+            document.getElementById("dinokep").src ="kepek/" +dinovariant+ ".jpg";
+            document.getElementById("dinokep").src ="kepek/" +dinovariant+ ".jpg";
+            document.getElementById("dinokep").src ="kepek/" +dinovariant+ ".jpg";
+            document.getElementById("dinoszoveg").innerHTML=leirastomb[dinovariant];
+
+        }
+
+    </script>
+</body>
+</html>
